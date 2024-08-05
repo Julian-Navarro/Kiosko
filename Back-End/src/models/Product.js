@@ -31,7 +31,11 @@ module.exports = (sequelize) => {
         type: DataTypes.TEXT,
         allowNull: true
       },
-      price: {
+      internalPrice: {
+        type: DataTypes.FLOAT,
+        allowNull: true
+      },
+      salePrice: {
         type: DataTypes.FLOAT,
         allowNull: true
       }

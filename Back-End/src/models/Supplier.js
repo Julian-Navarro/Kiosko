@@ -15,8 +15,8 @@ module.exports = (sequelize) => {
         allowNull: false,
         unique: true,
       },
-      purshases: {
-        type: DataTypes.ARRAY(DataTypes.JSON),
+      allowCount: {
+        type: DataTypes.BOOLEAN,
         allowNull: false
       },
       deliveryDays: {
@@ -30,6 +30,10 @@ module.exports = (sequelize) => {
       annotations: {
         type: DataTypes.TEXT,
         allowNull: true
+      },
+      transactions: {
+        type: DataTypes.JSON,
+        allowNull: false
       }
     },
     {

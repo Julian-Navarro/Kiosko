@@ -1,0 +1,26 @@
+.container {
+    /* background: green; */
+}
+.btns {
+    /* background: red; */
+    display: flex;
+    margin-top: 1rem;
+}
+.btns > button {
+    background: #333;
+    border: none;
+    color: #eee;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 2rem;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-family: Roboto;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: .4s;
+} 
+.btns > button:hover {
+    color: #fff;
+    box-shadow: 0px 0px 20px -2px #333;
+}

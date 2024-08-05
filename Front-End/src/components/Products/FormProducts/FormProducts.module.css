@@ -1,0 +1,38 @@
+.container {
+    background: greenyellow;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+
+}
+
+.container > div {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    width: 22.2rem;
+    margin-bottom: .5rem;
+    padding: 2px;
+}
+
+.container > div > p {
+    margin: 0;
+    background: #fff;
+    /* width: fit-content; */
+    padding: .1rem .5rem .1rem .5rem;
+    /* border-radius: 1rem; */
+    letter-spacing: .05rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.container > div > input {
+    width: 22rem;
+    height: 1.6rem;
+    outline: none;
+    border: none;
+    background: #eee;
+    font-size: 1.2rem;
+}

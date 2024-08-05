@@ -1,0 +1,58 @@
+.container {
+    background: #fff;
+    width: 24rem;
+    margin: 1rem;
+    border-radius: .3rem;
+    height: 16rem;
+}
+
+.container h3 {
+    color: #333;
+    /* background: greenyellow; */
+    margin: .3rem .3rem .5rem .3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    ;
+    letter-spacing: .05rem;
+    font-size: 1.1rem;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    /* background: greenyellow; */
+    margin: 0 .5rem .5rem .5rem;
+    align-items: center;
+}
+
+.img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    /* background: blue; */
+}
+
+.stats {
+    /* background: red; */
+width: 100%;
+}
+
+.stats>div {
+    /* background: gray; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats >div> :nth-child(1) {
+    margin: .5rem 0 .4rem 0;
+    /* background: violet; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+.stats >div> :nth-child(2) {
+    margin: .5rem 0 .4rem 0;
+    /* background: violet; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: green;
+}
