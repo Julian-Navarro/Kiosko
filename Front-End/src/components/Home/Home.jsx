@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Products from "../Products/Products";
 import Sales from "../Sales/Sales";
-import GenerateOrder from "../GenerateOrder/GenerateOrder";
+import GenerateOrder from "../GenerateOrder/GenerateOrders";
 import Suppliers from "../Suppliers/Suppliers";
 import Checkout from "../Checkout/Checkout";
 

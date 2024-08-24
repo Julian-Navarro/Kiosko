@@ -96,7 +96,8 @@ export default function ExpiratedProducts({ products }) {
 
                 {
                     filteredProducts?.map((product) => (
-                        <CardExpiratedProduct product={product} />
+                        <CardExpiratedProduct key={product.id}
+                            product={product} />
                     ))
                 }
             </div>

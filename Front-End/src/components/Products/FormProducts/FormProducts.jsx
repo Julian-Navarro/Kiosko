@@ -12,11 +12,10 @@ export default function FormProducts() {
         img: "",
         internalPrice: 0,
         salePrice: 0,
-
     });
 
     useEffect(() => {
-        getSuppliersNames()
+        getSuppliersNames();
     }, [])
 
     useEffect(() => {
@@ -42,11 +41,11 @@ export default function FormProducts() {
             </div>
             <div>
                 <p>Disponible</p>
-                <input type="text" name="available" />
+                <input type="checkbox" name="available" />
             </div>
             <div>
                 <p>Vencimiento (DD-MM-AA) (22-08-24)</p>
-                <input type="text" name="expirationDate" />
+                <input type="text" name="expirationDate" onClick={()=>{}}/>
             </div>
             <div>
                 <p>Cantidad</p>
