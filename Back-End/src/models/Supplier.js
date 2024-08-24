@@ -34,6 +34,10 @@ module.exports = (sequelize) => {
       transactions: {
         type: DataTypes.JSON,
         allowNull: false
+      },
+      actualOrder: {
+        type: DataTypes.JSON,
+        allowNull: true
       }
     },
     {

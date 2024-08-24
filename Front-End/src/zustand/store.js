@@ -6,6 +6,14 @@ const store = create((set) => ({
     product: "",
     suppliers: "",
     suppliersNames: [],
+    orders: [],
+    getOrders: async () => {
+        try {
+            
+        } catch (error) {
+            console.log(error);
+        }
+    },
     getProducts: async () => {
         try {
             const newProducts = await axios.get(`${HOST}products`);
@@ -28,6 +36,16 @@ const store = create((set) => ({
     },
     addProduct: async () => {
         
+    },
+    getSuppliers: async () => {
+        try {
+            const suppliers = await axios.get(`${HOST}suppliers`);
+            set((state)=>({
+                suppliers: suppliers.data
+            }))
+        } catch (error) {
+            console.log(error);
+        }
     }
 }));
 

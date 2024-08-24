@@ -1,8 +1,8 @@
 const { Router } = require("express");
 const router = Router();
 const { Product, Supplier } = require("../db");
-const { postProduct } = require("./controllers/ControllersProduct/postProduct")
-const { updateProduct } = require("./controllers/ControllersProduct/updateProduct")
+const { postProduct } = require("./controllers/ControllersProduct/postProduct");
+const { updateProduct } = require("./controllers/ControllersProduct/updateProduct");
 
 router.get("/", async (req, res) => {
     try {
@@ -57,5 +57,22 @@ router.put("/", async (req, res) => {
         console.log("ERROR\n", error);
         res.status(404).send({ msg: "Error updating product" })
     }
+});
+
+router.post("/bulkCreate", async (req, res) => {
+    try {
+        const { products } = req.body;
+        console.log(products);
+        products.forEach(async (el) => {
+            const findSupplier = await Supplier.findOne({ where: { name: el.suppliers[0].name } });
+            const newProduct = await Product.create(el);
+            await newProduct.addSupplier(findSupplier);
+        });
+        res.status(200).send({msg: "Products created succesfully"});
+    } catch (error) {
+        console.log(error);
+        res.status(404).send({ msg: `Error on /bulkCreate. ${error.message}` })
+    }
 })
-module.exports = router;
+ 
+module.exports = router; 

@@ -11,7 +11,7 @@ export default function Products({ products }) {
     return (
         <div className={s.container}>
             <div className={s.btns}>
-                <button onClick={() => setDisplayForm(!displayForm)}>{displayForm ? "Registrar Producto" : "Volver"}</button>
+                <button onClick={() => setDisplayForm(!displayForm)}>{displayForm ? "Volver" : "Registrar Producto"}</button>
                 {/* <button>Stock</button> */}
             </div>
 

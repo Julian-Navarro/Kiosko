@@ -17,7 +17,7 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require("./app.js");
+const server = require("./app.js"); 
 const { conn } = require("./src/db.js");
 const { PORT } = process.env;
 
@@ -25,4 +25,4 @@ conn.sync({ force: false }).then(() => {
   server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
-});
+}); 
