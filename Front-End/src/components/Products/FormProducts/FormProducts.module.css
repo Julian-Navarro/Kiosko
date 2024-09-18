@@ -1,4 +1,4 @@
-.container {
+/* .container {
     background: greenyellow;
     display: flex;
     flex-direction: column;
@@ -19,9 +19,7 @@
 .container > div > p {
     margin: 0;
     background: #fff;
-    /* width: fit-content; */
     padding: .1rem .5rem .1rem .5rem;
-    /* border-radius: 1rem; */
     letter-spacing: .05rem;
     font-weight: bold;
     font-size: 1.2rem;
@@ -35,4 +33,65 @@
     border: none;
     background: #eee;
     font-size: 1.2rem;
+} */
+
+
+
+
+
+.container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    background: lightgray;
+    border-radius: .4rem;
+    padding: 1rem;
+    background: lightgray
+}
+.container>div {
+    /* background: blue; */
+    margin-bottom: 2rem;
+}
+.container>div>p {
+    /* background: red; */
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: #333
+
+}
+.container>div>input {
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    position: relative;
+    letter-spacing: .1rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    transition: all .2s ease;
+    outline: none;
+    border: none;
+    border-bottom: .15rem solid #3e8aec;
+    :hover{
+        /* box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px; */
+    }
+    :focus{
+        background: #fff;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+    }
+}
+
+
+.container>div>select {
+    height: 1.8rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+.container>div>select>option {
+
 }
