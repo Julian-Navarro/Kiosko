@@ -1,6 +1,6 @@
-import s from "./ExpiratedProducts.module.css";
-import CardExpiratedProduct from "./CardExpiratedProduct";
 import { useEffect, useState } from "react";
+import s from "./Cards.module.css"
+import Card from "./Card";
 
 export default function ExpiratedProducts({ products }) {
     let date = new Date();
@@ -60,12 +60,10 @@ export default function ExpiratedProducts({ products }) {
         if (dayIs === "higher") return false;
         if (dayIs === "lower" || dayIs === "equal") return true;
     });
-
-    useEffect(() => { }, [day, month, year])
-
+    useEffect(()=>{},[day, month, year])
     return (
         <div className={s.container}>
-            <p>Productos próximos a vencer</p>
+            <p id="expiratedProducts">Productos próximos a vencer</p>
             <div className={s.containerSetDays}>
                 <div >
                     <p>Día</p>
@@ -96,7 +94,7 @@ export default function ExpiratedProducts({ products }) {
 
                 {
                     filteredProducts?.map((product) => (
-                        <CardExpiratedProduct key={product.id}
+                        <Card key={product.id}
                             product={product} />
                     ))
                 }

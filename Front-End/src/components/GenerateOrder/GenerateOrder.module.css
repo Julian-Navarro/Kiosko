@@ -1,5 +1,5 @@
 .container {
-    /* background: blue; */
+    background: blue;
 }
 
 .supTitle {
@@ -11,37 +11,13 @@
 }
 
 .suppliersBtns {
-    /* background: orange; */
+    background: orange;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     justify-content: space-between;
     padding: 3rem 0 3rem 0; 
 }
-.supContainer {
-    background: #252525;
-    border-radius: 4rem;
-    cursor: pointer;
-    box-shadow: 
-        .1rem .1rem 1rem .1rem #252525,
-        inset .4rem .4rem 1rem .1rem rgb(99, 99, 99);
-    height: 3rem;
-    width: 16rem;
-    margin: .2rem;
-    margin: .2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: .1rem;
-    border: none;
-    margin: 1rem;
-    transition: .3s ease;
-}
-
-.supContainer:hover {
-    background: gray;
-}
-
 .divOrders {
     /* background: red; */
     width: 100%;
@@ -52,13 +28,13 @@
     justify-content: space-between;
 }
 .order {
-    background: #BFFFB5;
-    background-image: linear-gradient(to bottom right, #FF985F, #feb47b);
+    background: violet;
+    background-image: linear-gradient(to bottom right, #2effb9, #a242d6);
     margin: .2rem;
     width: 18rem;
     height: 26rem;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 3rem;
 }
 .order > h1 {
     color: #333;
@@ -75,6 +51,35 @@
 .divList {
     background: blue;
     height: 22rem;
-    width: 100%;
+    width: 100%;   
+}
+.suppliersBtns > div {
+    background: green;
+    margin-top: 2rem;
+
+}
+.suppliersBtns > div > p {
+    /* background: red; */
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+.suppliersBtns > div > div {
+    background: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.suppliersBtns > div > div > button {
+    background: #333;
+    margin: 0 .5rem .5rem .5rem;
+    color: #eee;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .1rem;
+    border-radius: 2rem;
+    padding: .2rem 1rem .2rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
     
 }

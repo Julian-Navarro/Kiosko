@@ -53,10 +53,6 @@ const { Supplier, Product, Order } = sequelize.models;
 
 Product.belongsToMany(Supplier, { through: "product_supplier" });
 Supplier.belongsToMany(Product, { through: "product_supplier" });
-Supplier.belongsToMany(Order, { through: "supplier_order" });
-Order.belongsToMany(Supplier, { through: "supplier_order" });
-Product.belongsToMany(Order, { through: "product_order" });
-Order.belongsToMany(Product, { through: "product_order" });
 
 
 module.exports = {

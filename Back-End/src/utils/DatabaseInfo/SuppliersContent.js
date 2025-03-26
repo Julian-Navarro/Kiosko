@@ -118,7 +118,8 @@
                 "internalPrice": 452.15,
                 "salePrice": 750
             }
-        ]
+        ],
+        "category": "Golosinas"
     },
     {
         "id": "8af4c53e-89c9-411d-88a5-3796df69fdb6",
@@ -170,7 +171,8 @@
                 "internalPrice": 0,
                 "salePrice": 0
             }
-        ]
+        ],
+        "category": "Bebidas"
     },
     {
         "id": "d3a0f861-ba8e-4daa-a3ba-29252abcc953",
@@ -195,7 +197,8 @@
                 "internalPrice": 0,
                 "salePrice": 0
             }
-        ]
+        ],
+        "category": "Golosinas"
     },
     {
         "id": "0a102225-e649-490c-b12d-04cfed762e39",
@@ -262,7 +265,8 @@
                 "internalPrice": 730,
                 "salePrice": 1200
             }
-        ]
+        ],
+        "category": "Golosinas"
     },
     {
         "id": "d33183e0-bd63-4eb6-a3c1-f7db916845cb",
@@ -303,7 +307,8 @@
                 "internalPrice": 0,
                 "salePrice": 0
             }
-        ]
+        ],
+        "category": "Golosinas"
     },
     {
         "id": "ef2b0267-ac68-44ab-84f0-dc22a1612db1",
@@ -335,7 +340,8 @@
                 "internalPrice": 837.66,
                 "salePrice": 1250
             }
-        ]
+        ],
+        "category": "Golosinas"
     },
     {
         "id": "fa651b65-59d6-45c9-8a9a-916cadf62239",
@@ -356,7 +362,8 @@
                 "internalPrice": 390,
                 "salePrice": 650
             }
-        ]
+        ],
+        "category": "Golosinas"
     },
     {
         "id": "bc8f13fd-cf00-48c4-9122-b63e3c516ed1",
@@ -377,7 +384,8 @@
                 "internalPrice": 1060,
                 "salePrice": 1550
             }
-        ]
+        ],
+        "category": "Varios"
     },
     {
         "id": "961a770e-4744-41b0-88b8-e26352b176b2",
@@ -400,7 +408,8 @@
                 "internalPrice": 0,
                 "salePrice": 0
             }
-        ]
+        ],
+        "category": "Golosinas"
     },
     {
         "id": "5989b583-9935-42f7-8a49-91c44fa85908",
@@ -456,7 +465,8 @@
                 }
             ]
         },
-        "products": []
+        "products": [],
+        "category": "Varios"
     },
     {
         "id": "f0e95913-e223-4c16-9e0a-89614d5dd8d0",
@@ -516,7 +526,8 @@
                 }
             ]
         },
-        "products": []
+        "products": [],
+        "category": "Varios"
     },
     {
         "id": "53f351f2-a56e-49e3-a258-31288f603dae",
@@ -537,7 +548,8 @@
             "transactionsInfo": [],
             "purchases": []
         },
-        "products": []
+        "products": [],
+        "category": "Bebidas"
     },
     {
         "id": "e061a139-4694-472f-9ba8-75693d1fcae5",
@@ -596,6 +608,7 @@
                 }
             ]
         },
-        "products": []
+        "products": [],
+        "category": "Golosinas"
     }
 ]

@@ -35,8 +35,12 @@ module.exports = (sequelize) => {
         type: DataTypes.JSON,
         allowNull: false
       },
+      category: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
       actualOrder: {
-        type: DataTypes.JSON,
+        type: DataTypes.ARRAY(DataTypes.JSON),
         allowNull: true
       }
     },

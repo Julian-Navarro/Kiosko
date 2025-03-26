@@ -1,60 +1,29 @@
-/* .container {
-    background: greenyellow;
+.container {
+    /* background: yellow; */
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     align-items: center;
-
 }
-
-.container > div {
-    background: #333;
-    display: flex;
-    flex-direction: column;
-    width: 22.2rem;
-    margin-bottom: .5rem;
-    padding: 2px;
-}
-
-.container > div > p {
-    margin: 0;
-    background: #fff;
-    padding: .1rem .5rem .1rem .5rem;
-    letter-spacing: .05rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.container > div > input {
-    width: 22rem;
-    height: 1.6rem;
-    outline: none;
-    border: none;
-    background: #eee;
-    font-size: 1.2rem;
-} */
-
-
-
-
-
-.container {
+.container>div {
+    /* background: red; */
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     width: 24rem;
-    background: lightgray;
-    border-radius: .4rem;
+    border-radius: .8rem;
     padding: 1rem;
-    background: lightgray
+    /* border: .1rem solid #333; */
+    box-shadow: .3rem .3rem 1rem .1rem rgb(0,0,0,0.35);
 }
-.container>div {
+.container>div>div {
     /* background: blue; */
     margin-bottom: 2rem;
 }
-.container>div>p {
+.container>div>div>p {
     /* background: red; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     font-size: 1.1rem;
     letter-spacing: .1rem;
@@ -62,19 +31,22 @@
     color: #333
 
 }
-.container>div>input {
+.container>div>div>input {
     background: rgba(0, 0, 0, 0);
     appearance: none;
+    width: 23.5rem;
     position: relative;
     letter-spacing: .1rem;
     color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2rem;
+    font-weight: bold;
+    color: #3e8aec;
     transition: all .2s ease;
     outline: none;
     border: none;
     border-bottom: .15rem solid #3e8aec;
     :hover{
-        /* box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px; */
     }
     :focus{
         background: #fff;
@@ -84,14 +56,91 @@
     }
 }
 
-
-.container>div>select {
+.container>div>div>select {
     height: 1.8rem;
     outline: none;
     cursor: pointer;
     font-size: 1.2rem;
     letter-spacing: .1rem;
 }
-.container>div>select>option {
+.container>div>div>select>option {
+
+}
+.btn {
+    /* background: red; */
+    display: flex;
+    justify-content: flex-end;
+}
+.btn>button {
+    background: #3e8aec;
+    /* background: green; */
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #3e8aec, #86b4f1);
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: .4s;
+}
+.btn>button:hover {
+    box-shadow: 0px 0px 20px -2px #86b4f1;
+
+}
+.btnBack {
+    background: #333;
+    border: none;
+    color: #eee;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-family: Roboto;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: .4s;
+    align-self: flex-start;
+} 
+.btnBack:hover {
+    color: #fff;
+    box-shadow: 0px 0px 20px -2px #333;
+}
+
+.divInputsExpirationDate {
+    /* background: red; */
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-evenly;
+}
+.divInputsExpirationDate>input {
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    width: 3rem;
+    position: relative;
+    letter-spacing: .1rem;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3e8aec;
+    transition: all .2s ease;
+    outline: none;
+    border: none;
+    border-bottom: .15rem solid #3e8aec;
+    :hover{
+    }
+    :focus{
+        background: #fff;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+    }
 
 }

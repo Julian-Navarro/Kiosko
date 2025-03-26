@@ -503,7 +503,7 @@
             }
         ]
     },
-    {
+    { 
         "id": "e36c1119-590b-41ed-a82e-3a9540084ab2",
         "name": "Flynn Paff Confitados x50grs",
         "available": true,

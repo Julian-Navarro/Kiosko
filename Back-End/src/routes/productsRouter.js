@@ -29,7 +29,7 @@ router.get("/:id", async (req, res) => {
         const { id } = req.params;
         const findProduct = await Product.findByPk(id, {
             include: 'suppliers',
-            attributes: ['id', 'name', 'available', 'expirationDate', 'quantity', 'img']
+            attributes: ['id', 'name', 'available', 'expirationDate', 'quantity', 'img', "salePrice", "internalPrice"]
         })
         res.status(200).send(findProduct)
     } catch (error) {
@@ -50,9 +50,9 @@ router.post("/", async (req, res) => {
 
 router.put("/", async (req, res) => {
     try {
-        const updatedProduct = await updateProduct(req.body)
-        if (!updatedProduct[0]) return res.status(404).send({ msg: "No product find" })
-        res.status(200).send(updatedProduct)
+        const updatedProduct = await updateProduct(req.body);
+        if (!updatedProduct[0]) return res.status(404).send({ msg: "No product find" });
+        res.status(200).send(updatedProduct);
     } catch (error) {
         console.log("ERROR\n", error);
         res.status(404).send({ msg: "Error updating product" })

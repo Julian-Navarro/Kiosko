@@ -90,4 +90,13 @@ router.put("/", async (req, res) => {
     }
 })
 
+router.put("/order", async (req, res) => {
+    try {
+        const { order } = req.body;
+        
+    } catch (error) {
+        console.log(error);
+        res.status(404).send(error)
+    }
+})
 module.exports = router;
